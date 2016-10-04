@@ -1,10 +1,13 @@
 #include <iostream>
+#include <Windows.h>
 
 using namespace std;
 
-int main(int argc, char* argv[]) {
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 
-	cout << "Hello, world!" << endl;
-	return;
+	MessageBox(NULL, "Hello World!", "Just another Hello World program",
+		MB_ICONEXCLAMATION | MB_OK);
+
+	return 0;
+
 }
-
